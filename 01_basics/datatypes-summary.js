@@ -2,6 +2,8 @@
 // 7 types : String , Number , Boolean , null , undefined ,
 //  Symbol , BigInt
 
+const { use } = require("react");
+
 const score = 100 
 const scoreValue = 100.3
 
@@ -37,3 +39,25 @@ const myFunction = function(){
 myFunction();
 
 console.log(typeof myFunction);
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// stack(primitive) vs heap(non primitive)
+
+let myYoutubeChannel = "CodeWithNishant";
+let anotherChannel = myYoutubeChannel;
+myYoutubeChannel = "CodeWithNishant 2.0";
+
+console.log(myYoutubeChannel); // CodeWithNishant 2.0
+console.log(anotherChannel); // CodeWithNishant
+
+let userOne = {
+    email: "nishant@example.com",
+    UPI : "nishant@upi" 
+}
+let userTwo = userOne;
+userTwo.email = "nishant2@example.com";
+
+console.log(userOne.email); //nishant2@example.com
+console.log(userTwo.email); //nishant2@example.com
