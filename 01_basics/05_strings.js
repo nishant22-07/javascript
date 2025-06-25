@@ -39,5 +39,7 @@ console.log(url.replace("%20", "-")); // "https://www.nishant/nishant-kudale.com
  
 console.log(url.includes("nishant")); // true (checks if the string contains "nishant")
 
+console.log(gameName.split("-")); // ["COD", "MW"] (splits the string into an array at the hyphen)
+
 
 
