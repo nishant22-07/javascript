@@ -8,6 +8,7 @@
 </head>
 <body style="background-color: #212121; color: white;">
     <div class="parent">
+        <!-- days in weeks -->
         <div class="day">Monday</div>
         <div class="day">Tuesday</div>
         <div class="day">Wednesday</div>
@@ -17,9 +18,41 @@
 </body>
 <script>
     const parent = document.querySelector('.parent');
-    console.log(parent);
-    console.log(parent.children);
-    console.log(parent.children[1].innerHTML);
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[1].innerHTML);
+
+    for (let i = 0; i < parent.children.length; i++) {
+        const element = parent.children[i].innerHTML;
+        console.log(element);
+    }
+    parent.children[0].style.backgroundColor = "red";
+    parent.children[0].style.padding = "10px";
+    parent.children[0].style.borderRadius= "10px";
+    
+    
+    parent.children[1].style.backgroundColor = "orange";
+    parent.children[1].style.padding = "10px";
+    parent.children[1].style.borderRadius= "10px";
+
+    parent.children[2].style.backgroundColor = "violet";
+    parent.children[2].style.padding = "10px";
+    parent.children[2].style.borderRadius= "10px";
+    
+    parent.children[3].style.backgroundColor = "green";
+    parent.children[3].style.padding = "10px";
+    parent.children[3].style.borderRadius= "10px";
+
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+    
+
+    const day1 = document.querySelector('.day');
+    // console.log(day1);
+    // console.log(day1.parentElement);
+    // console.log(day1.nextElementSibling);
+    
+    console.log("Nodes : ",parent.childNodes);
     
 
 
